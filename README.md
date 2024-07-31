@@ -52,12 +52,14 @@ npm i
 
 [Drizzle w/ Supabase Example](https://orm.drizzle.team/learn/tutorials/drizzle-with-supabase)
 
+Set up a new project on [Supabase](https://supabase.com/).
+
 Copy the connection string (DB URL) from the Supabase output, and paste it into the .env file (see below).
 
 Once you have the DB URL, run the following command to create the database and tables:
 
 ```bash
-run run migrate
+npm run migrate
 ```
 
 **5. Run App**
