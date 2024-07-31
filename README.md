@@ -1,6 +1,6 @@
 # AI Router Chat
 
-A template for building an AI chat app that utilizes advanced LLM model routing powered by [Not Diamond](https://www.notdiamond.ai/).
+An AI chat app that utilizes advanced LLM model routing powered by [Not Diamond](https://notdiamond.readme.io/).
 
 ## Demo
 
