@@ -2,6 +2,8 @@
 
 An AI chat app that utilizes advanced LLM model routing powered by [Not Diamond](https://notdiamond.readme.io/).
 
+![AI Router Chat](/public/readme.png)
+
 ## Demo
 
 See the latest demo [here]().
@@ -54,7 +56,7 @@ npm i
 
 Set up a new project on [Supabase](https://supabase.com/).
 
-Copy the connection string (DB URL) from the Supabase output, and paste it into the .env file (see below).
+Copy the connection string (DB URL) from the Supabase output, and paste it into the above .env file.
 
 Once you have the DB URL, run the following command to create the database and tables:
 
