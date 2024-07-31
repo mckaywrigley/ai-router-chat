@@ -24,17 +24,7 @@ You'll also need API keys from each LLM provider (OpenAI, Anthropic, Groq, Perpl
 git clone https://github.com/mckaywrigley/ai-router-chat.git
 ```
 
-**2. Setup DB**
-
-[Drizzle w/ Supabase Example](https://orm.drizzle.team/learn/tutorials/drizzle-with-supabase)
-
-```bash
-supabase start
-```
-
-Copy the connection string (DB URL) from the Supabase output, and paste it into the .env file (see below).
-
-**3. Provide API Keys**
+**2. Provide API Keys**
 
 Create a .env file in the root of the repo with these values:
 
@@ -47,13 +37,27 @@ DATABASE_URL=
 NOT_DIAMOND_API_KEY=
 OPENAI_API_KEY=
 ANTHROPIC_API_KEY=
-GOOGLE_API_KEY=
+GOOGLE_GENERATIVE_AI_API_KEY=
+GROQ_API_KEY=
+PERPLEXITY_API_KEY=
 ```
 
-**4. Install Dependencies**
+**3. Install Dependencies**
 
 ```bash
 npm i
+```
+
+**4. Setup DB**
+
+[Drizzle w/ Supabase Example](https://orm.drizzle.team/learn/tutorials/drizzle-with-supabase)
+
+Copy the connection string (DB URL) from the Supabase output, and paste it into the .env file (see below).
+
+Once you have the DB URL, run the following command to create the database and tables:
+
+```bash
+run run migrate
 ```
 
 **5. Run App**
