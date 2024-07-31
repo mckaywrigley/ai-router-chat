@@ -2,11 +2,13 @@
 
 An AI chat app that utilizes advanced LLM model routing powered by [Not Diamond](https://notdiamond.readme.io/).
 
+Includes an "Arena mode" where you can dynamically improve your model router.
+
 ![AI Router Chat](/public/readme.png)
 
 ## Demo
 
-See the latest demo [here]().
+See the latest demo [here](https://x.com/mckaywrigley/status/1818717706037977182).
 
 ## Sponsor
 
