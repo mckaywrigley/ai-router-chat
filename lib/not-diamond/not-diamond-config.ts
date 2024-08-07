@@ -117,8 +117,8 @@ export const ndLLMProviders: NdModel[] = [
   {
     ndProvider: "perplexity",
     cloudProvider: "perplexity",
-    ndModelId: "llama-3-sonar-large-32k-online",
-    providerModelId: "llama-3-sonar-large-32k-online",
+    ndModelId: "llama-3.1-sonar-large-128k-online",
+    providerModelId: "llama-3.1-sonar-large-128k-online",
     label: "Perplexity",
     inputCost: 1.0,
     outputCost: 1.0,
@@ -134,5 +134,5 @@ export const fallbackModels = [
   "llama-3-70b-chat-hf",
   "claude-3-haiku-20240307",
   "gpt-4o-mini",
-  "llama-3-sonar-large-32k-online"
+  "llama-3.1-sonar-large-128k-online"
 ]
