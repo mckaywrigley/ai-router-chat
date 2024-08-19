@@ -1,5 +1,6 @@
 "use server"
 
+import console from "console"
 import {
   fallbackModels,
   ndBaseUrl,
@@ -12,7 +13,8 @@ import { handleFetch } from "../../lib/utils/handle-fetch"
 export async function selectNdModel(
   preferenceId: string,
   messages: { role: string; content: string }[],
-  activeModels: NDLLMProvider[]
+  activeModels: NDLLMProvider[],
+  previousSession: string | null
 ) {
   try {
     const response = await handleFetch(`${ndBaseUrl}/v2/chat/modelSelect`, {
@@ -21,7 +23,8 @@ export async function selectNdModel(
       body: JSON.stringify({
         messages,
         llm_providers: activeModels.filter(model => model.provider !== ""),
-        preference_id: preferenceId
+        preference_id: preferenceId,
+        previous_session: previousSession
       })
     })
 

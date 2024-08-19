@@ -63,6 +63,7 @@ export const Chat: FC<ChatProps> = ({ chat, initialMessages, ...props }) => {
   // Hack to clear messages
   useEffect(() => {
     if (pathname === "/") {
+      setSessionId(null)
       setMessages([])
       setIsGenerating(false)
       setWaitingForGeneration(false)
@@ -323,7 +324,8 @@ export const Chat: FC<ChatProps> = ({ chat, initialMessages, ...props }) => {
       const { session_id, model } = await selectNdModel(
         profile.preferenceId,
         formattedMessages,
-        modelsToUse
+        modelsToUse,
+        activeSessionId
       )
 
       model1 =
